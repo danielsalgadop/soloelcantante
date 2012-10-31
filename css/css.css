@@ -1,0 +1,302 @@
+a {
+text-decoration:none;
+border:10px;
+  color:white;
+}
+a img {
+  border:none;
+}
+
+html,body {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:99%;  /*needed for container min-height */
+/*	background:white;*/
+	background:black;
+	color:white;
+	
+}
+
+#header {
+  /*background-color:yellow;*/
+  background-color:black;
+  width: 100%;
+  height: 218px;
+}
+.niapa_logo {
+position:absolute;
+left:55px;
+top:40px;
+}
+
+#contenido {
+/* la altura la defino dsd javascript */
+  width:900px;
+  /*background-color:blue;*/
+  background-color:black;
+  margin-left:8%;
+/*  max-height:75px;
+  overflow:auto;*/
+}
+blanco {
+	  color:white;
+  font-family:"Arial", Times, serif;
+  line-height:2px;
+}
+blanco_concierto {
+  color:white;
+  font-family:"Arial", Times, serif;
+}
+#conciertos {
+  text-align:left;
+  width:50%;
+  float:left;
+}
+
+/*imagen flotante de conciertos*/
+.permanente_dere{
+  position:fixed;
+  top:200px;
+  right:20%;
+}
+
+#descargas{
+text-align:left;
+/*
+background-color:#cccccc;
+*/
+}
+#descarga>a>img{
+background-color:red;
+/*
+position:fixed;
+top:30px;
+	top:5px;
+	background-image:url('images/iconos/descargar.png');
+*/
+}
+
+
+/*#contacto{
+width:200px;
+height:397px;
+}*/
+.cabecera_disco{
+width:469px;
+height:80px;
+}
+.titulo_disco{
+	color:white;
+	background-color:grey;
+	font-size:150%;
+	line-height:300%
+}
+.icono_descargar_disco{
+	position:relative;
+	float:right;
+}
+.navegador_descargas{
+  position:fixed;
+  top:-140px;
+  right:300px;	
+}
+.seSubraya:hover{
+	text-decoration:underline;
+}
+/*
+.icono_play_cancion{
+	position:relative;
+	float:right;
+	left:30px;
+}
+*/
+/* position:absolute bottom:0px no me vale para poner el footer abajo del todo cuando las pantallas son pequeñas, ya que lo pone abajo de lo que ves pero no abajo del todo del contenido. Una vez que haces scroll*/
+#footer {
+  position:absolute;
+  bottom:0px;
+/*  background-color:black;*/
+  background-color:black;
+  /*background-color:red;*/
+ /* width: 100%;*/ /* uso jacscript */
+  width: 65px;
+  height: 67px;
+  z-index:100;
+  padding-left:30%;
+}
+/* **************************************** SLIDESHOW ************************************** */
+/* creo que esta DEPRECATED */
+/*** set the width and height to match your images **/
+
+#slideshowx { /* OOOOJJJOOO hay una x que invalida este id , hay algo raro, a dia de hoy funciona (con la x) */
+   position:absolute;
+    top:68px;
+	width:900px;
+	height:385px;
+}
+#slideshow IMG {
+    position:relative;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+}
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+#slideshow IMG.last-active {
+    z-index:9;
+}
+/* PONER EL FONDO NEGRO PARA RESALTAR UNA IMAGEN*/
+#theImage
+{
+    float: left;
+    padding: 5px 5px 5px 0;
+}
+#overlayBackground
+{
+    position: absolute;
+    background-color: Black;
+    top: 0;
+    left: 0;
+    z-index: 103;
+}
+
+#largeImage
+{
+    position: absolute;
+	width:50%;
+    width: 2330px; height:700px; /*  Tamanio de la imagen 
+*/
+    top: 100px;
+    z-index: 104;
+}
+
+/* TODOS LOS BOTONES 4 POR CADA BOTON.*/
+
+#boton_conciertos {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/conciertos.gif');
+margin-left:35px;
+}
+#boton_conciertos:hover {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/conciertos2.gif');
+}
+
+#boton_discografia {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/discografia.gif');
+}
+#boton_discografia:hover {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/discografia2.gif');
+}
+#boton_videos {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/videos.gif');
+}
+#boton_videos:hover {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/videos2.gif');
+}
+#boton_descargas {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/descargas.gif');
+}
+#boton_descargas:hover {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/descargas2.gif');
+}
+#boton_contacto {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/contacto.gif');
+}
+#boton_contacto:hover {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/contacto2.gif');
+}
+/* AHORA SON SELECCIONADOSº*/
+#sdiscografia {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/discografia3.gif');
+}
+#sdiscografia:hover {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/discografia4.gif');
+}
+#sconciertos {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/conciertos3.gif');
+margin-left:35px;
+}
+#sconciertos:hover {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/conciertos4.gif');
+}
+#svideos {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/videos3.gif');
+}
+#svideos:hover {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/videos4.gif');
+}
+#sdescargas {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/descargas3.gif');
+}
+#sdescargas:hover {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/descargas4.gif');
+}
+
+#scontacto {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../images/botones/contacto3.gif');
+}
+#scontacto:hover {
+width:120px;
+height:30px;
+float:left;
+background-image:url('../../images/botones/contacto4.gif');
+}

@@ -1,0 +1,59 @@
+$(document).ready(function() {
+	methodToFixLayout();
+	$(window).bind("resize", methodToFixLayout);
+	 jQuery('#conciertos').css('display', 'none');
+	 jQuery('#discografia').css('display', 'none');
+	 jQuery('#videos').css('display', 'none');	
+	// jquery cycle
+	$('.slideshow').cycle({
+		fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
+
+	// Los botones
+	// *.gif -> por defecto
+	//*2.gif -> hover
+	//*3.gif -> EN LA PAGINA
+	//*4.gif -> EN PAGINA Y hover
+/////	$('#boton_discografia').hover(function (){alert('sobre volando discografia')});
+	$('#boton_discografia').hover(function (){alert('sobre volando discografia')});
+});
+var pagina='index';
+// Donde controlo el ancho y alto de la pagina
+function methodToFixLayout(){
+	var h = $(window).height();
+	var w = $(window).width();
+	// PARTE HORIZONTAL
+	// el header mide de alto 218 , el footer mide de alto 67px = TOTAL 285
+	h = h - 285;
+	$('#contenido').css('max-height',h+'px');
+	$('#contenido').css('overflow-y','auto');
+	$('#contenido').css('overflow-x','hidden');
+	$('#footer').css('width','100%');
+//	$('#contenido').css('overflow','auto');
+	// PARTE VERTICAL
+	// los datos originales son margin left 65 + contenido   (todos en px)
+/*	alert(w);*/
+}
+
+function leeresto(elque){
+	//quito todo, mejor usar toggle (Por implementar)
+   	 jQuery('#slideshow').css('display', 'none');
+	 jQuery('#conciertos').css('display', 'none');
+	 jQuery('#discografia').css('display', 'none');
+	 jQuery('#videos').css('display', 'none');	
+	if (elque == "discografia"){
+		//muestro discografia
+		jQuery('#'+elque).css('display', 'block');
+	}
+	else if (elque == "conciertos"){
+		jQuery('#'+elque).css('display', 'block');
+	}
+	else if (elque == "videos"){
+		jQuery('#'+elque).css('display', 'block');
+	}
+	else if (elque == "descargas"){
+		jQuery('#descargas').css('display', 'block');
+	}
+}
+
+

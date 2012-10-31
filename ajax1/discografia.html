@@ -1,0 +1,58 @@
+<head><meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"><meta http-equiv="content-style-type" content="text/css">
+<script type="text/javascript" src="solo/js/jquery.js"></script>
+</head>
+
+	<div id="discografia" class="contenido">
+		<blanco>TIEMPO DE ROCK</blanco>
+		<br />
+		<img src="../images/discografia/tiempoderockg.jpg" alt="Slideshow Image 2" width="900px" height="270px" class="theImage"  />
+		<br />
+		<br />
+		<br />
+		<br />
+		<blanco>AMOR DE PADRE</blanco>
+		<br />
+
+		<img src="../images/discografia/amordepadreg.jpg" alt="Slideshow Image 2" width="900px" height="270px"  class="theImage" />
+	</div> <!-- cierro discografia -->
+	<div id="asdf"></div>
+	<script type="text/javascript"></script>
+	alert("caguen todo esto no funciona");
+	// Hacer que la imagenes con clase theImage al ser pulsadas pongan fondo negro y la img en grande
+  $('.theImage').click(function()
+   {
+    var background = $('<div/>');
+    $(background).attr('id', 'overlayBackground').animate(
+     {
+      'opacity' : '.8'
+     }, 1000).css(
+     {
+      'width' : $(document).width(),
+      'height' : $(document).height(),
+     });
+
+     $('body').append(background);
+     var newImage = $('<img/>');
+     var width = $('body').width();
+     $(newImage).attr('src', $(this).attr('src')).attr('id', 'largeImage').css(
+      {
+       'left' : width/2 - 200
+       //~ 'left' : width/2 - 1165
+      });
+
+     $('body').append(newImage).children('#theImage').hide();
+     $(newImage).fadeIn(2000, function()
+      {
+       $(this).bind('click', function()
+        {
+         $(this).fadeOut(1000);
+         $('div#overlayBackground').fadeOut(2000, function()
+          {
+           $(this).remove();
+          });
+        });
+      });
+   });
+
+
+	</script>
