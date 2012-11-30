@@ -1,0 +1,12 @@
+SEGUN lo hablado con GONZ
+-icono de play ordenado en una columna lineal (poner tabla)
+-DESCARGAS->Discos flotantes de la derecha, no caben los nombres de los discos sin q se partan (corregir)
+-DESCARGAS: el orden de los discos esta correcto en discos flotantes, asi q el resto debe respetar ese orden
+-DESCARGAS: icono de descargar en discos flotantes ademas de en titutlo de disco
+VOY A HACERLO IDEA MIA
+-DISCOGRAFIA: poner icono de descargar disco al lado de titulo de disco 
+
+
+PENDIDENTE proximas versiones:
+- Pedir a Gonz resto de canciones (sobre todo tiempo de rock)
+- trocear el index y meterlo en contenido/
