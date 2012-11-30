@@ -7,6 +7,9 @@ VOY A HACERLO IDEA MIA
 -DISCOGRAFIA: poner icono de descargar disco al lado de titulo de disco 
 
 
+FALLOS CONOCIDOS (KNOWN BUGS)
+Cancion Summertime Blues "baila" suena raruno a los poocos segundos de empezar (pedir nueva copia)
+
 PENDIDENTE proximas versiones:
 - Pedir a Gonz resto de canciones (sobre todo tiempo de rock)
 - trocear el index y meterlo en contenido/
