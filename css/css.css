@@ -54,12 +54,13 @@ blanco_concierto {
   float:left;
 }
 
-/*imagen flotante de conciertos*/
+/*imagen flotante de conciertos y discos flotante es descargas*/
 .permanente_dere{
   position:fixed;
   top:200px;
-  right:20%;
+  	right:20%
 }
+/*imagen flotante de conciertos y discos flotantes en descargas*/
 
 #descargas{
 text-align:left;

@@ -12,4 +12,5 @@ Cancion Summertime Blues "baila" suena raruno a los poocos segundos de empezar (
 
 PENDIDENTE proximas versiones:
 - Pedir a Gonz resto de canciones (sobre todo tiempo de rock)
+- Pedir Gonz Back in your Arms q falta
 - trocear el index y meterlo en contenido/
