@@ -15,7 +15,10 @@ html,body {
 /*	background:white;*/
 	background:black;
 	color:white;
-	
+	  font-family:"Arial", Times, serif;
+/*
+  line-height:2px;
+*/
 }
 
 #header {
@@ -41,8 +44,7 @@ top:40px;
 }
 blanco {
   color:white;
-  font-family:"Arial", Times, serif;
-  line-height:2px;
+
 }
 blanco_concierto {
   color:white;
@@ -84,13 +86,13 @@ width:200px;
 height:397px;
 }*/
 .cabecera_disco{
-width:469px;
+width:269px;
 height:80px;
 }
 .titulo_disco{
 	color:white;
 	background-color:grey;
-	font-size:150%;
+	font-size:140%;
 	line-height:300%
 }
 .icono_descargar_disco{
@@ -102,7 +104,8 @@ height:80px;
   top:-140px;
   right:300px;	
 }
-.seSubraya:hover{
+
+.overSubrayado:hover{
 	text-decoration:underline;
 }
 /*
