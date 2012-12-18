@@ -18,3 +18,5 @@ PENDIDENTE proximas versiones:
 poner css sprites para background de botones
 cambiar contenido con ajax
 poner favicon.ico
+poner meta words en head
+poner slideshow compatible con jquery mas moderno

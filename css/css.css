@@ -39,6 +39,7 @@ top:40px;
   /*background-color:blue;*/
   background-color:black;
   margin-left:8%;
+   overflow-y: scroll;
 /*  max-height:75px;
   overflow:auto;*/
 }
