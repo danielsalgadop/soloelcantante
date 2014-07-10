@@ -220,18 +220,6 @@ height:30px;
 float:left;
 background-image:url('../images/botones/videos2.gif');
 }
-#boton_descargas {
-width:120px;
-height:30px;
-float:left;
-background-image:url('../images/botones/descargas.gif');
-}
-#boton_descargas:hover {
-width:120px;
-height:30px;
-float:left;
-background-image:url('../images/botones/descargas2.gif');
-}
 #boton_contacto {
 width:120px;
 height:30px;
